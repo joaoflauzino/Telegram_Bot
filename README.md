@@ -1,6 +1,6 @@
 # Telegram_Bot
 
-The goal of this project is create a Telegram Bot that uses the DialogFlow API for response.
+The goal of this project is to create a Telegram Bot that uses the DialogFlow API for response.
 
 # Instructions
 
