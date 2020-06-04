@@ -22,12 +22,14 @@ def textMessage(bot, update):
         bot.send_message(chat_id=update.message.chat_id, text='Desculpe, não entendi...')
         
 # Handlers
-start_command_handler = CommandHandler('start', startCommand)
-text_message_handler = MessageHandler(Filters.text, textMessage)
-# Add handlers to the dispatcher
-dispatcher.add_handler(start_command_handler)
-dispatcher.add_handler(text_message_handler)
-# Start update search
-updater.start_polling(clean=True)
-# Stops the bot
-updater.idle()
+if __name__ == "__main__":
+    
+    start_command_handler = CommandHandler('start', startCommand)
+    text_message_handler = MessageHandler(Filters.text, textMessage)
+    # Add handlers to the dispatcher
+    dispatcher.add_handler(start_command_handler)
+    dispatcher.add_handler(text_message_handler)
+    # Start update search
+    updater.start_polling(clean=True)
+    # Stops the bot
+    updater.idle()
