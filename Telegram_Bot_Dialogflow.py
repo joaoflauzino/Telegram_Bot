@@ -4,6 +4,8 @@ import apiai, json
 updater = Updater(token=token_telegram) # Telegram API Token
 dispatcher = updater.dispatcher
 
+#Functions
+
 # Commands
 def startCommand(bot, update):
     bot.send_message(chat_id=update.message.chat_id, text='Olá, sobre o que você gostaria de conversar?')
